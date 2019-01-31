@@ -1,0 +1,16 @@
+\diagram{
+  \interaction{1}{ta}{(0,-0.25)}{ddot}{overhang};
+  \interaction{1}{tb}{(1,-0.25)}{ddot}{overhang};
+  \interaction{3}{tc}{(2,-0.25)}{ddot}{overhang};
+  \draw[flexdotted] (0, 0.25) node[ddot=white] (g1) {} to (1.5,0.25) node[ddot=white] (g2) {};
+  \draw[semithick, bend left] (ta1) to (g1); 
+  \draw[semithick, bend right] (ta1) to (g1); 
+  \draw[semithick] (tb1) to ++(-0.25,0.75);
+  \draw[->-] (tb1) to (g2);
+  \draw[->-] (g2) to (tc1);
+  \draw[semithick] (tc1) to ++(0.25,0.75);  
+  \draw[semithick] (tc2) to ++(-0.25,0.75);  
+  \draw[semithick] (tc2) to ++(0.25,0.75);  
+  \draw[semithick] (tc3) to ++(-0.25,0.75);  
+  \draw[semithick] (tc3) to ++(0.25,0.75);  
+}

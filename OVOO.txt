@@ -1,0 +1,7 @@
+\diagram{
+  \interaction{2}{g}{(0,0)}{ddot=white}{flexdotted};
+  \draw[-<-] (g1) to node[left] {}++(0,+0.5);
+  \draw[->-] (g1) to node[left] {}++(0,-0.5);
+  \draw[-<-] (g2) to node[left] {}++(-0.25,+0.5);
+  \draw[->-] (g2) to node[right] {}++(0.25,+0.5);
+}

@@ -1,0 +1,16 @@
+\diagram{
+  \interaction{1}{ta}{(0,-0.25)}{ddot}{overhang};
+  \interaction{1}{tb}{(1,-0.25)}{ddot}{overhang};
+  \interaction{3}{tc}{(2,-0.25)}{ddot}{overhang};
+  \draw[flexdotted] (0.5, 0.25) node[ddot=white] (g1) {} to (2,0.25) node[ddot=white] (g2) {};
+  \draw[semithick, -<-] (ta1) to node[left] {$i_{3}$} ++(-0.25,0.75);
+  \draw[semithick, ->-] (ta1) to node[left] {$a_{1}$} (g1);                                                   
+  \draw[semithick, ->-] (tb1) to node[right] {$a_{6}$} ++(0.25,0.75);
+  \draw[semithick, -<-] (tb1) to node[right] {$i_{1}$} (g1);                                                   
+  \draw[semithick, bend left, -<-] (tc1) to node[right] {$i_{4}$} (g2);  
+  \draw[semithick, bend right, ->-] (tc1) to node[right] {$a_{4}$} (g2);  
+  \draw[semithick, ->-] (tc2) to node[right] {$a_{3}$} ++(0.25,0.75);  
+  \draw[semithick, -<-] (tc2) to node[right] {$i_{5}$} ++(-0.25,0.75);  
+  \draw[semithick, ->-] (tc3) to node[right] {$a_{2}$} ++(0.25,0.75);  
+  \draw[semithick, -<-] (tc3) to node[right] {$i_{2}$} ++(-0.25,0.75);  
+}
